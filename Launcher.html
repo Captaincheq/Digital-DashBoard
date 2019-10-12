@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <title>WebAPP project - 2017002106</title>
+        <title>WebAPP project - 2017002106 - HUTC</title>
 		<style type="text/css">
         body
         {
@@ -14,8 +14,8 @@
 			bottom: 1%;
 			left: 1%;
 			color: firebrick;
-			font-family: Impact;
-            font-size: 800%;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 690%;
         }
 		</style>
 	</head>
@@ -26,16 +26,20 @@
 			function showTime()
             {
                 var date = new Date();
-				var h = date.getHours();
-				var m = date.getMinutes();
-				var s = date.getSeconds();
-				var ms = date.getMilliseconds();
-				var y = date.getFullYear();
-				var mon = date.getMonth() + 1;
-				var d = date.getDate();
-				h = (h < 10) ? "0" + h : h;
-				m = (m < 10) ? "0" + m : m;
-				s = (s < 10) ? "0" + s : s;
+				var h    = date.getHours();
+				var m    = date.getMinutes();
+				var s    = date.getSeconds();
+				var ms   = date.getMilliseconds();
+				var y    = date.getFullYear();
+				var mon  = date.getMonth() + 1;
+				var d    = date.getDate();
+				h   = (h   < 10 ) ? "0"  + h   : h;
+				m   = (m   < 10 ) ? "0"  + m   : m;
+				s   = (s   < 10 ) ? "0"  + s   : s;
+				ms  = (ms  < 10 ) ? "00" + ms  : ms;
+				ms  = (ms  < 100) ? "0"  + ms  : ms;
+				mon = (mon < 10 ) ? "0"  + mon : mon;
+				d   = (d   < 10 ) ? "0"  + d   : d;
                 var time = d + "." + mon + "." + y + " - " + h + ":" + m + ":" + s + ":" + ms;
 				document.getElementById("CLK").innerText = time;
 				document.getElementById("CLK").textContent = time;
