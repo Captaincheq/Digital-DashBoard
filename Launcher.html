@@ -9,13 +9,12 @@
 			background-size: cover;
         }
         .clock
-        {
-			position: absolute;
+        {	position: absolute;
 			bottom: 1%;
-			left: 1%;
-			color: firebrick;
-			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 690%;
+			left:1%;
+			color: crimson;
+			font-family: monospace;
+            font-size: 800%;
         }
 		</style>
 	</head>
@@ -40,7 +39,7 @@
 				ms  = (ms  < 100) ? "0"  + ms  : ms;
 				mon = (mon < 10 ) ? "0"  + mon : mon;
 				d   = (d   < 10 ) ? "0"  + d   : d;
-                var time = d + "." + mon + "." + y + " - " + h + ":" + m + ":" + s + ":" + ms;
+                var time = y + "." + mon + "." + d + "-" + h + ":" + m + ":" + s + ":" + ms;
 				document.getElementById("CLK").innerText = time;
 				document.getElementById("CLK").textContent = time;
 				setTimeout(showTime, 0);
