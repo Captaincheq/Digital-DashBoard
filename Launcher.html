@@ -36,7 +36,7 @@
 				m   = (m   < 10 ) ? "0"  + m   : m;
 				s   = (s   < 10 ) ? "0"  + s   : s;
 				ms  = (ms  < 10 ) ? "00" + ms  : ms;
-				ms  = (ms  < 100) ? "0"  + ms  : ms;
+				//ms  = (ms  < 100) ? "0"  + ms  : ms;
 				mon = (mon < 10 ) ? "0"  + mon : mon;
 				d   = (d   < 10 ) ? "0"  + d   : d;
                 var time = y + "." + mon + "." + d + "-" + h + ":" + m + ":" + s + ":" + ms;
@@ -45,6 +45,6 @@
 				setTimeout(showTime, 0);
 			}
 			showTime();
-        </script>
+		</script>
 	</body>
 </html>
