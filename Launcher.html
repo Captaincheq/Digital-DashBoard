@@ -18,7 +18,7 @@
         			{
 						position: absolute;
 						top: 1%;
-						left:10%;
+						left:12%;
 						color:snow;
 						font-family: monospace ;
            				font-size: 250%;
@@ -47,7 +47,7 @@
 					ms  = (ms  < 10 ) ? "00" + ms  : ms;
 					mon = (mon < 10 ) ? "0"  + mon : mon;
 					d   = (d   < 10 ) ? "0"  + d   : d;
-                	var time = "Current StarDate:" + y + "." + mon + "." + d + "-" + h + ":" + m + ":" + s + ":" + ms;
+                	var time = "Current StarDate~ " + y + "." + mon + "." + d + "-" + h + ":" + m + ":" + s + ":" + ms;
 					document.getElementById("CLK").textContent = time;
 					setTimeout(showTime, 0);
 				}
@@ -57,8 +57,8 @@
 		<a
 		class="weatherwidget-io"
 		href="https://forecast7.com/en/30d89120d09/huzhou/"
-		data-label_1="HUZHOU"
-		data-label_2="SAT UPLink"
+		data-label_1="SAT UPLink 01"
+		data-label_2="Huzhou,China"
 		data-font="Ubuntu"
 		data-icons="Climacons Animated"
 		data-days="5"
