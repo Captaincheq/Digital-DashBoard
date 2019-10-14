@@ -7,7 +7,7 @@
 			<style type="text/css">
 				body
         			{
-						background: url("http://www.battlefield3.na-pulpit.pl/battlefield-3-wallpaper-3d.jpg");
+						background: url("https://wonderfulengineering.com/wp-content/uploads/2014/01/tank-wallpapers-13.jpg");
 						background-size: cover;
         			}
 				.clock
@@ -17,20 +17,15 @@
 						left:1%;
 						color: crimson;
 						font-family: monospace ;
-           				 font-size: 800%;
-					}
-				.weather
-					{
-						position: absolute;
-						top: 1%;
-						left: 1%;
+           				font-size: 800%;
 					}
 			</style>
 	</head>
 	<body>
-		<div class="weather">
-		</div>
-		<div id="CLK" class="clock">
+		<div
+			id="CLK"
+			class="clock"
+		>
 			<script type="text/javascript">
 				function showTime()
             	{
@@ -55,5 +50,29 @@
 				showTime();
 			</script>
 		</div>
+		<a
+		class="weatherwidget-io"
+		href="https://forecast7.com/en/30d89120d09/huzhou/"
+		data-label_1="HUZHOU"
+		data-label_2="SAT UPLink"
+		data-font="monospace"
+		data-icons="Climacons Animated"
+		data-textcolor= Crimson
+		position: absolute;
+		top: 50%; >
+			<script>
+				!function(d,s,id)
+					{
+						var js,fjs=d.getElementsByTagName(s)[0];
+						if(!d.getElementById(id))
+							{
+								js=d.createElement(s);
+								js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
+								fjs.parentNode.insertBefore(js,fjs);
+							}
+					}
+				(document,'script','weatherwidget-io-js');
+			</script>
+		</a>
 	</body>
 </html>
