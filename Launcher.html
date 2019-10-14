@@ -8,12 +8,13 @@
 			background: url("http://www.battlefield3.na-pulpit.pl/battlefield-3-wallpaper-3d.jpg");
 			background-size: cover;
         }
-        .clock
-        {	position: absolute;
+		.clock
+        {
+			position: absolute;
 			bottom: 1%;
 			left:1%;
 			color: crimson;
-			font-family: monospace;
+			font-family: monospace ;
             font-size: 800%;
         }
 		</style>
@@ -36,11 +37,9 @@
 				m   = (m   < 10 ) ? "0"  + m   : m;
 				s   = (s   < 10 ) ? "0"  + s   : s;
 				ms  = (ms  < 10 ) ? "00" + ms  : ms;
-				//ms  = (ms  < 100) ? "0"  + ms  : ms;
 				mon = (mon < 10 ) ? "0"  + mon : mon;
 				d   = (d   < 10 ) ? "0"  + d   : d;
                 var time = y + "." + mon + "." + d + "-" + h + ":" + m + ":" + s + ":" + ms;
-				document.getElementById("CLK").innerText = time;
 				document.getElementById("CLK").textContent = time;
 				setTimeout(showTime, 0);
 			}
