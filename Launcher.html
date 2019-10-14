@@ -12,16 +12,16 @@
         			}
 				.weatherwidget-io
 					{
-						max-width: 1000px;
+						max-width: 100px;
 					}
 				.clock
         			{
 						position: absolute;
-						bottom: 1%;
-						left:1%;
-						color: crimson;
+						top: 1%;
+						left:40%;
+						color:snow;
 						font-family: monospace ;
-           				font-size: 800%;
+           				font-size: 250%;
 					}
 			</style>
 	</head>
@@ -47,7 +47,7 @@
 					ms  = (ms  < 10 ) ? "00" + ms  : ms;
 					mon = (mon < 10 ) ? "0"  + mon : mon;
 					d   = (d   < 10 ) ? "0"  + d   : d;
-                	var time = y + "." + mon + "." + d + "-" + h + ":" + m + ":" + s + ":" + ms;
+                	var time = "Current StarDate:" + y + "." + mon + "." + d + "-" + h + ":" + m + ":" + s + ":" + ms;
 					document.getElementById("CLK").textContent = time;
 					setTimeout(showTime, 0);
 				}
@@ -61,8 +61,8 @@
 		data-label_2="SAT UPLink"
 		data-font="Ubuntu"
 		data-icons="Climacons Animated"
-		data-days="7"
-		data-textcolor= Crimson >
+		data-days="5"
+		data-textcolor= Snow >
 			<script>
 				!function(d,s,id)
 					{
