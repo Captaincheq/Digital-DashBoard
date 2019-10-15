@@ -13,8 +13,8 @@
 				.clockcontainer
 					{
 						position: absolute;
-						left: 2%;
-						bottom: 10%;
+						left: 1%;
+						top: 1%;
 					}
 				.weathercontainer
 					{
@@ -52,7 +52,46 @@
 						ms  = (ms  < 10 ) ? "00" + ms  : ms;
 						mon = (mon < 10 ) ? "0"  + mon : mon;
 						d   = (d   < 10 ) ? "0"  + d   : d;
-                		var time = y + "." + mon + "." + d + "-" + h + ":" + m + ":" + s + ":" + ms;
+						var days =
+						[
+							'Sunday',
+							'Monday',
+							'Tuesday',
+							'Wednesday',
+							'Thursday',
+							'Friday',
+							'Saturday'
+						];
+						var months =
+						[
+							'January',
+							'February',
+							'March',
+							'April',
+							'May',
+							'June',
+							'July',
+							'August',
+							'September',
+							'October',
+							'November',
+							'December'
+						];
+						var day = days[ date.getDay() ];
+						var month = months[ date.getMonth() ];
+						var hour = date.getHours();
+						var ses = "AM";
+						if(hour == 0)
+						{
+							hour = 12;
+						}
+						if(hour > 12)
+						{
+							hour = hour - 12;
+							ses = "PM";
+						}
+						var time =
+						hour+":"+m+":"+s+ses+","+day+","+d+" "+month+","+y+" | | "+"StarDate-"+y+"."+mon+"."+d+"."+h+"."+m+"."+s+"."+ms;
 						document.getElementById("CLK").textContent = time;
 						setTimeout(showTime, 0);
 					}
