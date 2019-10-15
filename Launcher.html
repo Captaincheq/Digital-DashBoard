@@ -21,7 +21,7 @@
 						left:12%;
 						color:snow;
 						font-family: monospace ;
-           				font-size: 250%;
+           				font-size: 45px;
 					}
 			</style>
 	</head>
@@ -47,7 +47,7 @@
 					ms  = (ms  < 10 ) ? "00" + ms  : ms;
 					mon = (mon < 10 ) ? "0"  + mon : mon;
 					d   = (d   < 10 ) ? "0"  + d   : d;
-                	var time = "Current StarDate~ " + y + "." + mon + "." + d + "-" + h + ":" + m + ":" + s + ":" + ms;
+                	var time = "Current StarDate ~ " + y + "." + mon + "." + d + "-" + h + ":" + m + ":" + s + ":" + ms;
 					document.getElementById("CLK").textContent = time;
 					setTimeout(showTime, 0);
 				}
