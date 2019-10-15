@@ -7,53 +7,60 @@
 			<style type="text/css">
 				body
         			{
-						background: url("https://wallpapercave.com/wp/6GlYJnm.jpg");
+						background: url("http://www.battlefield3.na-pulpit.pl/battlefield-3-wallpaper-3d.jpg");
 						background-size: cover;
         			}
-				.weatherwidget-io
+				.clockcontainer
 					{
-						max-width: 100px;
+						position: absolute;
+						left: 2%;
+						bottom: 10%;
+					}
+				.weathercontainer
+					{
+						position: absolute;
+						bottom: 1%;
+						left: 1%;
+						height: 100px;
+						width:	1300px;
 					}
 				.clock
         			{
-						position: absolute;
-						top: 1%;
-						left:12%;
 						color:snow;
-						font-family: monospace ;
-           				font-size: 45px;
+						font-family: monospace;
+           				font-size: 30px;
 					}
 			</style>
 	</head>
 	<body>
-		<div
-			id="CLK"
-			class="clock"
-		>
-			<script type="text/javascript">
-				function showTime()
-            	{
-                	var date = new Date();
-					var h    = date.getHours();
-					var m    = date.getMinutes();
-					var s    = date.getSeconds();
-					var ms   = date.getMilliseconds();
-					var y    = date.getFullYear();
-					var mon  = date.getMonth() + 1;
-					var d    = date.getDate();
-					h   = (h   < 10 ) ? "0"  + h   : h;
-					m   = (m   < 10 ) ? "0"  + m   : m;
-					s   = (s   < 10 ) ? "0"  + s   : s;
-					ms  = (ms  < 10 ) ? "00" + ms  : ms;
-					mon = (mon < 10 ) ? "0"  + mon : mon;
-					d   = (d   < 10 ) ? "0"  + d   : d;
-                	var time = "Current StarDate ~ " + y + "." + mon + "." + d + "-" + h + ":" + m + ":" + s + ":" + ms;
-					document.getElementById("CLK").textContent = time;
-					setTimeout(showTime, 0);
-				}
-				showTime();
-			</script>
+		<div class="clockcontainer">
+			<div id="CLK" class="clock">
+				<script type="text/javascript">
+					function showTime()
+            		{
+                		var date = new Date();
+						var h    = date.getHours();
+						var m    = date.getMinutes();
+						var s    = date.getSeconds();
+						var ms   = date.getMilliseconds();
+						var y    = date.getFullYear();
+						var mon  = date.getMonth() + 1;
+						var d    = date.getDate();
+						h   = (h   < 10 ) ? "0"  + h   : h;
+						m   = (m   < 10 ) ? "0"  + m   : m;
+						s   = (s   < 10 ) ? "0"  + s   : s;
+						ms  = (ms  < 10 ) ? "00" + ms  : ms;
+						mon = (mon < 10 ) ? "0"  + mon : mon;
+						d   = (d   < 10 ) ? "0"  + d   : d;
+                		var time = y + "." + mon + "." + d + "-" + h + ":" + m + ":" + s + ":" + ms;
+						document.getElementById("CLK").textContent = time;
+						setTimeout(showTime, 0);
+					}
+					showTime();
+				</script>
+			</div>
 		</div>
+		<div class="weathercontainer">
 		<a
 		class="weatherwidget-io"
 		href="https://forecast7.com/en/30d89120d09/huzhou/"
@@ -61,7 +68,7 @@
 		data-label_2="Huzhou,China"
 		data-font="Ubuntu"
 		data-icons="Climacons Animated"
-		data-days="5"
+		data-days="7"
 		data-textcolor= Snow >
 			<script>
 				!function(d,s,id)
@@ -70,12 +77,14 @@
 						if(!d.getElementById(id))
 							{
 								js=d.createElement(s);
-								js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
+								js.id=id;
+								js.src='https://weatherwidget.io/js/widget.min.js';
 								fjs.parentNode.insertBefore(js,fjs);
 							}
 					}
 				(document,'script','weatherwidget-io-js');
 			</script>
 		</a>
+		</div>
 	</body>
 </html>
