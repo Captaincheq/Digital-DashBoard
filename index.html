@@ -90,13 +90,13 @@
 							ses = "PM";
 						}
 
-						h   = (h   < 10 ) ? "0"  + h   : h;
-						m   = (m   < 10 ) ? "0"  + m   : m;
-						s   = (s   < 10 ) ? "0"  + s   : s;
-						ms  = (ms  < 10 ) ? "00" + ms  : ms;
-						mon = (mon < 10 ) ? "0"  + mon : mon;
-						d   = (d   < 10 ) ? "0"  + d   : d;
-						hour= (hour< 10 ) ? "0"  +hour : hour;
+						h      = (h   	 < 10  ) ? "0"   + h      : h;
+						m      = (m   	 < 10  ) ? "0"   + m      : m;
+						s      = (s   	 < 10  ) ? "0"   + s      : s;
+						ms     = (ms  	 < 10  ) ? "00"  + ms     : ms;
+						mon    = (mon 	 < 10  ) ? "0"   + mon    : mon;
+						d      = (d   	 < 10  ) ? "0"   + d      : d;
+						hour   = (hour  < 10  ) ? "0"   + hour   : hour;
 						
 						var time =
 						hour+":"+m+ses+","+day+","+d+" "+month+","+y+" StarDate-"+y+"."+mon+"."+d+"."+h+"."+m+"."+s+"."+ms;
