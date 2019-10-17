@@ -13,9 +13,8 @@
 				.clockcontainer
 					{
 						position: absolute;
-						left: 1%;
-						top: 1%;
-						height:min-content;
+						left: 2%;
+						top: 2%;
 						width: 50%;
 					}
 				.weathercontainer
@@ -93,7 +92,7 @@
 							ses = "PM";
 						}
 						var time =
-						hour+":"+m+":"+s+ses+","+day+","+d+" "+month+","+y+" "+"StarDate-"+y+"."+mon+"."+d+"."+h+"."+m+"."+s+"."+ms;
+						hour+":"+m+":"+s+ses+","+day+","+d+" "+month+","+y+" "+"StarDate - "+y+"."+mon+"."+d+"."+h+"."+m+"."+s+"."+ms;
 						document.getElementById("CLK").textContent = time;
 						setTimeout(showTime, 0);
 					}
