@@ -14,8 +14,8 @@
 				.clockcontainer
 					{
 						position: absolute;
-						left: 2%;
-						top: 2%;
+						bottom: 2%;
+						bottom: 2%;
 						width: 45%;
 					}
 
@@ -25,30 +25,11 @@
 						font-family: monospace;
            				font-size: 250%;
 					}
-				.timercontainer
-					{
-						position: absolute;
-						bottom: 0%;
-						width: 99%;
-						color: snow;
-						font-family: monospace;
-						text-align: center;
-						font-size: 250%;
-					}
-				li
-					{
-						display: inline-block;
-					}
-
-				li span
-					{
-						display: block;
-					}
 
 				.weathercontainer
 					{
 						position: absolute;
-						top: 13%;
+						top: 2%;
 						left: 2%;
 						width: 650px;
 					}
@@ -116,44 +97,14 @@
 						d      = (d   	 < 10  ) ? "0"   + d      : d;
 						hour   = (hour   < 10  ) ? "0"   + hour   : hour;
 						
-						var time =
-						hour+":"+m+ses+","+day+","+d+" "+month+","+y+" StarDate-"+y+"."+mon+"."+d+"."+h+"."+m+"."+s+"."+ms;
-						
-						document.getElementById("CLK").textContent = time;
+						var noobtime =hour+":"+m+":"+s+" "+ses+","+day+","+d+" "+month+","+y+" ";
+						var protime  ="StarDate-"+y+"."+mon+"."+d+"."+h+"."+m+"."+s+"."+ms;
+						document.getElementById("CLK").textContent = noobtime + protime;
 						setTimeout(showTime, 0);
 					}
 					showTime();
 				</script>
 			</div>
-		</div>
-
-		<div class="timercontainer">
-				<script type="text/javascript">
-					const second = 1000,
-      				minute = second * 60,
-      				hour = minute * 60,
-      				day = hour * 24;
-					let countDown = new Date('Jan 1, 2020 00:00:00').getTime(),
-    				x = setInterval(function()
-						{
-      						let now = new Date().getTime(),
-          					distance = countDown - now;
-      						document.getElementById('d').innerText = Math.floor(distance / (day)),
-        					document.getElementById('h').innerText = Math.floor((distance % (day)) / (hour)),
-        					document.getElementById('m').innerText = Math.floor((distance % (hour)) / (minute)),
-        					document.getElementById('s').innerText = Math.floor((distance % (minute)) / second);
-							
-						}, second)
-				</script>
-				<ul>
-					<li>Exactly</li>
-			  		<li><span id="d"></span>Days	</li>
-			  		<li><span id="h"></span>Hours	</li>
-					<li><span id="m"></span>Minutes	</li>
-					<li>and </li>
-					  <li><span id="s"></span>Seconds	</li>
-					  <li>left</li>
-				</ul>
 		</div>
 
 		<div class="weathercontainer">
