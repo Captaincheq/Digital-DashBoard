@@ -7,229 +7,121 @@
 			<style type="text/css">
 				body
         			{
-						background: url("http://www.battlefield3.na-pulpit.pl/battlefield-3-wallpaper-3d.jpg");
+						background: url("https://wallpapertag.com/wallpaper/full/b/1/9/954730-pretty-anime-wallpapers-1920x1080-download-free.jpg");
 						background-size: cover;
-        			}
-
-				.clockcontainer
-					{
-						position: absolute;
-						bottom: 2%;
-						left: 2%;
-						width: 565px;
 					}
 
-					.clock
-        				{
-							color:snow;
-							font-family: monospace;
-           					font-size: 30px;
+					.switchcontainer
+						{
+							position: absolute;
+							bottom: 2%;
+							right: 2%
 						}
 
-				.weathercontainer
-					{
-						position: absolute;
-						top: 2%;
-						left: 2%;
-						width: 650px;
-					}
-				.switch
-					{
-						position: absolute;
-						right: 2%;
-						bottom: 2%;
-						font-family: impact;
-					}
 					a
 						{
 							position: relative;
-							display: inline-block;
-  							padding: 15px 30px;
-  							color: snow;
+							display: grid;
+							padding: 15px 30px;
+							color: #2196f3;
+  							text-transform: uppercase;
   							letter-spacing: 4px;
   							text-decoration: none;
-  							font-size: 26px;
-  							overflow: hidden;
-  							transition: 0.2s;
+  							font-size: 30px;
+							overflow: hidden;
 						}
-
-							a:hover
-								{
-  									color:seashell;
-  									background: #f36507;
-  									box-shadow: 0 0 10px firebrick, 0 0 40px firebrick, 0 0 80px firebrick;
-  									transition-delay: 1s;
-								}
-
-						a span
+						a:hover
 							{
-								position: absolute;
-  								display: block;
+								color: #255784;
+								background-color: #2196f3;
+  								box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  								transition-delay: 1s;
 							}
-							a span:nth-child(1)
+					a span
+						{
+  							position: absolute;
+							  display: block;
+						}
+						a span:nth-child(1)
+							{
+								top: 0;
+  								left: -100%;
+  								width: 100%;
+  								height: 2px;
+								  background: linear-gradient(90deg, transparent, #2196f3);
+							}
+							a:hover span:nth-child(1)
 								{
-  									top: 0;
-  									left: -100%;
-  									height: 2px;
-  									width: 100%;
-  									background: linear-gradient(90deg, transparent,red);
+									left: 100%;
+									transition: 1s;
 								}
-								a:hover span:nth-child(1)
-									{
-										left: 100%;
-										transition: 1s;
-									}
-							a span:nth-child(2)
+						a span:nth-child(3)
+							{
+ 					 			bottom: 0;
+ 								right: -100%;
+								width: 100%;
+								height: 2px;
+  								background: linear-gradient(270deg, transparent, #2196f3);
+							}
+							a:hover span:nth-child(3)
+							{
+  								right: 100%;
+  								transition: 1s;
+  								transition-delay: .5s;
+							}
+						a span:nth-child(2)
+							{
+  								top: -100%;
+  								right: 0;
+  								width: 2px;
+  								height: 100%;
+								background: linear-gradient(180deg, transparent, #2196f3);
+							}
+							a:hover span:nth-child(2)
 								{
-									top: -100%;
-									right: 0;
-									height: 100%;
-									width: 2px;
-									background: linear-gradient(180deg, transparent,red);
+  									top: 100%;
+  									transition: 1s;
+									  transition-delay: .25s;
 								}
-								a:hover span:nth-child(2)
-									{
-										top: 100%;
-										transition: 1s;
-										transition-delay: 0.25s;
-									}
-							a span:nth-child(3)
+						a span:nth-child(4)
+							{
+  								bottom: -100%;
+  								left: 0;
+  								width: 2px;
+  								height: 100%;
+								  background: linear-gradient(0deg, transparent, #2196f3);
+							}
+							a:hover span:nth-child(4)
 								{
-  									right: -100%;
-  									bottom: 0;
-									height: 2px;
-									width: 100%;
-									background: linear-gradient(270deg, transparent,red);
+  									bottom: 100%;
+  									transition: 1s;
+									transition-delay: .75s;
 								}
-								a:hover span:nth-child(3)
-									{
-										right: 100%;
-										transition: 1s;
-										transition-delay: 0.5s;
-									}
-							a span:nth-child(4)
-								{
-									bottom: -100%;
-									left: 0;
-									height: 100%;
-									width: 2px;
-									background: linear-gradient(360deg, transparent,red);
-								}
-								a:hover span:nth-child(4)
-									{
-  										bottom: 100%;
-  										transition: 1s;
-										transition-delay: 0.75s;
-									}
 			</style>
 	</head>
 	<body>
-
-		<div class="clockcontainer">
-			<div id="CLK" class="clock">
-				<script type="text/javascript">
-					function showTime()
-            		{
-                		var date = new Date();
-						var h    = date.getHours();
-						var m    = date.getMinutes();
-						var s    = date.getSeconds();
-						var ms   = date.getMilliseconds();
-						var y    = date.getFullYear();
-						var mon  = date.getMonth() + 1;
-						var d    = date.getDate();
-						var days =
-						[
-							'Sunday',
-							'Monday',
-							'Tuesday',
-							'Wednesday',
-							'Thursday',
-							'Friday',
-							'Saturday'
-						];
-						var months =
-						[
-							'January',
-							'February',
-							'March',
-							'April',
-							'May',
-							'June',
-							'July',
-							'August',
-							'September',
-							'October',
-							'November',
-							'December'
-						];
-						var day 	= days[ date.getDay() ];
-						var month 	= months[ date.getMonth() ];
-						var hour 	= date.getHours();
-						var ses 	= "AM";
-						if(hour == 0)
-						{
-							hour = 12;
-						}
-						if(hour > 12)
-						{
-							hour = hour - 12;
-							ses = "PM";
-						}
-
-						h      = (h   	 < 10  ) ? "0"   + h      : h;
-						m      = (m   	 < 10  ) ? "0"   + m      : m;
-						s      = (s   	 < 10  ) ? "0"   + s      : s;
-						ms     = (ms  	 < 10  ) ? "00"  + ms     : ms;
-						mon    = (mon 	 < 10  ) ? "0"   + mon    : mon;
-						d      = (d   	 < 10  ) ? "0"   + d      : d;
-						hour   = (hour   < 10  ) ? "0"   + hour   : hour;
-						
-						var noobtime =hour+":"+m+":"+s+" "+ses+","+day+","+d+" "+month+","+y+"                         ";
-						var protime  ="StarDate-"+y+"."+mon+"."+d+"."+h+"."+m+"."+s+"."+ms;
-						document.getElementById("CLK").textContent = noobtime + protime;
-						setTimeout(showTime, 0);
-					}
-					showTime();
-				</script>
-			</div>
+		<div class="switchcontainer">
+				<a href="BattleField.html">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					InterFace 01
+				</a>
+				<a href="">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					InterFace 02
+				</a>
+				<a href="">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+						InterFace 03
+				</a>
 		</div>
-
-		<div class="switch">
-			<a href="">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				Switch Interface
-			  </a>
-		</div>
-		<div class="weathercontainer">
-		<a
-		class="weatherwidget-io"
-		href="https://forecast7.com/en/30d89120d09/huzhou/"
-		data-label_1="SAT UPLink 01"
-		data-label_2="Huzhou,China"
-		data-font="Ubuntu"
-		data-icons="Climacons Animated"
-		data-days="7"
-		data-textcolor= Snow >
-			<script>
-				!function(d,s,id)
-					{
-						var js,fjs=d.getElementsByTagName(s)[0];
-						if(!d.getElementById(id))
-							{
-								js=d.createElement(s);
-								js.id=id;
-								js.src='https://weatherwidget.io/js/widget.min.js';
-								fjs.parentNode.insertBefore(js,fjs);
-							}
-					}
-				(document,'script','weatherwidget-io-js');
-			</script>
-		</a>
-		</div>
-
 	</body>
 </html>
