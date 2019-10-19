@@ -16,7 +16,6 @@
 						position: absolute;
 						bottom: 2%;
 						left: 2%;
-						width: 565px;
 					}
 
 					.clock
@@ -184,9 +183,8 @@
 						d      = (d   	 < 10  ) ? "0"   + d      : d;
 						hour   = (hour   < 10  ) ? "0"   + hour   : hour;
 						
-						var noobtime =hour+":"+m+":"+s+" "+ses+","+day+","+d+" "+month+","+y+"                         ";
-						var protime  ="StarDate-"+y+"."+mon+"."+d+"."+h+"."+m+"."+s+"."+ms;
-						document.getElementById("CLK").textContent = noobtime + protime;
+						var noobtime =hour+":"+m+":"+s+" "+ses+","+day+","+d+" "+month+","+y;
+						document.getElementById("CLK").textContent = noobtime;
 						setTimeout(showTime, 0);
 					}
 					showTime();
