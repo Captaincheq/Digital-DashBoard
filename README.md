@@ -1,6 +1,6 @@
 # Digital-DashBoard
 
-<p align="center"><img alt="Miku" src="https://img.moegirl.org/enmoegirl/9/9b/Hatsune_miku_v4x.png"></p>
+<p align="center"><img alt="BCK" src="https://financesonline.com/uploads/2017/12/web-app.png"></p>
 
 <p align="center">
 >>🌍 <a href="https://sierra007117.github.io/Digital-DashBoard/index.html">Jump to DashBoard</a><<<br>
