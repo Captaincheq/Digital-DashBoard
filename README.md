@@ -15,3 +15,11 @@
 - Capable of working offline with just precached data and volatile memory.
 
 ## Technologies
+
+- Dark Sky API
+- HTML
+- CSS3
+- JavaScript
+- V8(Chrome and Docker) and Spidermonkey(Firefox)
+- Node.JS
+-
