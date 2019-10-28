@@ -1,11 +1,11 @@
 # Digital-DashBoard
 
-A custom WebAPP to be used as a Digital Dashboard.
 <p align="center"><img alt="Miku" src="https://img.moegirl.org/enmoegirl/9/9b/Hatsune_miku_v4x.png"></p>
+
 <p align="center">
 >>🌍 <a href="https://sierra007117.github.io/Digital-DashBoard/index.html">Jump to DashBoard</a><<<br>
 <br>
-<b>Fully customizable interface with Digital chronometer,calender and weather data plugins using HTML,CSS and JS<br><br>
+<b>Fully customizable interface with Digital chronometer,calender and weather data plugins using HTML,CSS and JS<br>
 
 ## Features
 
