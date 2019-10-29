@@ -1,5 +1,5 @@
 # Digital-DashBoard
-A modern,network connected Digital Dashboard that makes a lot of devices obsolete and redundant through unifying different modules within a single interface.
+A modern,network connected Digital Dashboard that makes a lot of devices obsolete and redundant through unifying different modules within a single interface. 
 
 <p align="center"><img alt="BCK" src="https://financesonline.com/uploads/2017/12/web-app.png"></p>
 <p align="center">
