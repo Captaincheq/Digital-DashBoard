@@ -3,7 +3,7 @@ A modern,network connected Digital Dashboard that makes a lot of devices obsolet
 
 <p align="center"><img alt="BCK" src="https://financesonline.com/uploads/2017/12/web-app.png"></p>
 <p align="center">
->>🌍 <a href="https://sierra007117.github.io/Digital-DashBoard/index.html">Jump to DashBoard</a><<<br>
+>><a href="https://sierra007117.github.io/Digital-DashBoard/index.html">Jump to DashBoard</a><<<br>
 <br>
 <b>Fully customizable interface with Digital chronometer,calender and weather data plugins using HTML,CSS and JS.It's designed to be an always on,zero maintenance,ever changing display featuring the content that's important and relevant to the user.<br>
 
