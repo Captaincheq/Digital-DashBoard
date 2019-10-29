@@ -7,6 +7,8 @@ A modern,network connected Digital Dashboard that makes a lot of devices obsolet
 <br>
 <b>Fully customizable interface with Digital chronometer,calender and weather data plugins using HTML,CSS and JS.It's designed to be an always on,zero maintenance,ever changing display featuring the content that's important and relevant to the user.<br>
 
+<p align="center"><img alt="BCK" src="https://3iology.com/dist/assets/img/webapplication.png"></p>
+
 ## Features
 
 - Can be deployed via web browser,no docker module needed.
