@@ -13,8 +13,14 @@ A modern,network connected Digital Dashboard that makes a lot of devices obsolet
 
 ## Project Plan
 
-- Week 8 : Grid update for InterFace 3
-- Week 9 : Geolocation sub-system update for the Weather Module
+- Week 8  : Grid update for InterFace 3
+- Week 9  : Geolocation sub-system update for the Weather Module
+- Week 10 : Completion of Front-End
+- Week 11 : Backend Optimization
+- Week 12 : Frontend Optimization
+- Week 13 : Banckend Debugging and Stress testing
+- Week 14 : Upgrade Ops based on Teacher's Input
+- Week 15 : Final Releash
 
 ## Features
 
