@@ -20,7 +20,7 @@ A modern,network connected Digital Dashboard that makes a lot of devices obsolet
 - Week 12 : Frontend Optimization
 - Week 13 : Banckend Debugging and Stress testing
 - Week 14 : Upgrade Ops based on Teacher's Input
-- Week 15 : Final Releash
+- Week 15 : Final Release
 
 ## Features
 
