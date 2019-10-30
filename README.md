@@ -11,6 +11,11 @@ A modern,network connected Digital Dashboard that makes a lot of devices obsolet
 
 <p align="center"><img alt="BCK" src="https://financesonline.com/uploads/2017/12/web-app.png"></p>
 
+## Project Plan
+
+- Week 8 : Grid update for InterFace 3
+- Week 9 : Geolocation sub-system update for the Weather Module
+
 ## Features
 
 - Can be deployed via web browser,no docker module needed.
