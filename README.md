@@ -3,7 +3,6 @@ A modern,network connected Digital Dashboard that makes a lot of devices obsolet
 
 <p align="center"><img alt="BCK" src="https://3iology.com/dist/assets/img/webapplication.png"></p>
 
-
 <p align="center">
 >><a href="https://sierra007117.github.io/Digital-DashBoard/index.html">Jump to DashBoard</a><<<br>
 <br>
